@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-brand">AN</a>
@@ -19,121 +19,254 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"      data-i18n="nav-about">About</a></li>
+        <li><a href="#education"  data-i18n="nav-education">Education</a></li>
+        <li><a href="#skills"     data-i18n="nav-skills">Skills</a></li>
+        <li><a href="#tools"      data-i18n="nav-tools">Tools</a></li>
+        <li><a href="#projects"   data-i18n="nav-projects">Projects</a></li>
+        <li><a href="#contact"    data-i18n="nav-contact">Contact</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn lang-btn--active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <div class="hero-label">Learning &amp; AI Enablement Portfolio</div>
+      <div class="hero-label" data-i18n="hero-label">Learning &amp; AI Enablement Portfolio</div>
       <h1 class="hero-name">Ayelet Nogrian</h1>
-      <p class="hero-tagline">Practical L&amp;D, AI enablement, onboarding, change enablement, and global collaboration projects that translate organizational challenges into structured learning solutions, manager tools, dashboards, learning portals, and adoption processes.</p>
-      <a href="#projects" class="hero-cta">View Projects</a>
+      <p class="hero-tagline" data-i18n="hero-tagline">Learning &amp; Organizational Development professional with an academic background in Psychology, Education, Labor Studies, Global Management and Organizational Change. I combine L&amp;D, onboarding, AI enablement, knowledge management, facilitation, dashboards, and digital learning tools to build practical learning solutions for organizations.</p>
+      <a href="#projects" class="hero-cta" data-i18n="hero-cta">View Projects</a>
     </div>
     <div class="hero-scroll">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ===== ABOUT ===== -->
   <section id="about" class="section section-light">
     <div class="container">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title" data-i18n="section-about">About</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I am a Learning &amp; Organizational Development professional with experience in training operations, LMS administration, onboarding, manager enablement, AI enablement, knowledge management, stakeholder collaboration, and KPI-based learning measurement.</p>
+          <p data-i18n="about-p1">I am a Learning &amp; Organizational Development professional based in Tel Aviv, with experience in training operations, LMS administration, onboarding, manager enablement, AI enablement, knowledge management, stakeholder collaboration, and KPI-based learning measurement.</p>
+          <p data-i18n="about-p2">My academic background combines Psychology, Education, Labor Studies, Global Management, Organizational Change, Organizational Consulting, and Group Facilitation. I use this foundation to design learning solutions that connect people, business needs, manager enablement, and measurable adoption.</p>
+          <p data-i18n="about-p3">This portfolio demonstrates how I translate organizational challenges into practical L&amp;D programs, facilitator decks, dashboards, learning portals, knowledge hubs, case studies, and implementation resources.</p>
         </div>
         <div class="about-stats">
           <div class="stat-item">
             <div class="stat-number">4</div>
-            <div class="stat-label">Enterprise Programs</div>
+            <div class="stat-label" data-i18n="stat-programs">Enterprise Programs</div>
           </div>
           <div class="stat-item">
             <div class="stat-number">3+</div>
-            <div class="stat-label">Global Regions</div>
+            <div class="stat-label" data-i18n="stat-regions">Global Regions</div>
           </div>
           <div class="stat-item">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Data-Backed Design</div>
+            <div class="stat-label" data-i18n="stat-data">Data-Backed Design</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
+  <!-- ===== FROM ACADEMIC TO PRACTICE ===== -->
+  <section id="academic-to-practice" class="section">
     <div class="container">
-      <h2 class="section-title">Core Skills</h2>
-      <div class="skills-flat">
-        <span class="skill-tag">Learning &amp; Development</span>
-        <span class="skill-tag">AI Enablement</span>
-        <span class="skill-tag">Manager Enablement</span>
-        <span class="skill-tag">Onboarding</span>
-        <span class="skill-tag">Learning Operations</span>
-        <span class="skill-tag">LMS Administration</span>
-        <span class="skill-tag">Knowledge Management</span>
-        <span class="skill-tag">Change Enablement</span>
-        <span class="skill-tag">Global Collaboration</span>
-        <span class="skill-tag">KPI Measurement</span>
-        <span class="skill-tag">Stakeholder Management</span>
-        <span class="skill-tag">Facilitation</span>
-        <span class="skill-tag">Dashboard Thinking</span>
-        <span class="skill-tag">Learning Portal Design</span>
+      <h2 class="section-title" data-i18n="section-academic">From Academic Learning to Practical L&amp;D Solutions</h2>
+      <div class="demonstrates-inner">
+        <p class="demonstrates-text" data-i18n="academic-p1">The projects in this portfolio were developed from topics I studied, researched, and chose during my academic journey in Psychology, Education, Labor Studies, Global Management, Organizational Change, and Group Facilitation.</p>
+        <p class="demonstrates-text" data-i18n="academic-p2">Each project began as an academic or research-based topic and was then translated into a practical Learning &amp; Development asset: a training program, workshop structure, facilitator deck, case study, dashboard, learning portal mockup, knowledge hub, and implementation resources.</p>
+        <p class="demonstrates-text" data-i18n="academic-p3">This portfolio reflects my ability to connect theory with practice — taking organizational, managerial, and learning-related concepts and turning them into structured, usable, and measurable learning solutions for real workplace challenges.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section section-light">
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
     <div class="container">
-      <h2 class="section-title">Portfolio Projects</h2>
+      <h2 class="section-title" data-i18n="section-education">Education</h2>
+      <div class="education-grid">
+
+        <div class="edu-card">
+          <p class="edu-institution" data-i18n="edu-tau-institution">Tel Aviv University</p>
+          <p class="edu-degree"      data-i18n="edu-tau-degree">M.A. in Labor Studies</p>
+          <p class="edu-spec"        data-i18n-html="edu-tau-spec">Specialization: Global Management &amp; Organizational Change<br>Additional academic focus: Organizational Consulting, Group Facilitation, Labor Law coursework</p>
+          <span class="edu-dates"    data-i18n="edu-tau-dates">2023 – 2025</span>
+        </div>
+
+        <div class="edu-card">
+          <p class="edu-institution" data-i18n="edu-ariel-institution">Ariel University</p>
+          <p class="edu-degree"      data-i18n="edu-ariel-degree">B.A. in Psychology</p>
+          <span class="edu-dates"    data-i18n="edu-ariel-dates">2020 – 2023</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HONORS & DISTINCTIONS ===== -->
+  <section id="honors" class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-i18n="section-honors">Honors &amp; Distinctions</h2>
+      <div class="honors-grid">
+
+        <div class="honor-card">
+          <div class="honor-icon">&#127941;</div>
+          <p class="honor-meta"  data-i18n="honor1-meta">Military Service Distinction</p>
+          <h3 class="honor-title" data-i18n="honor1-title">Military Service Distinction — Leadership &amp; Education Role, Southern Region</h3>
+          <p class="honor-desc"  data-i18n="honor1-desc">Recognized for excellence, responsibility, and leadership during military service. In addition to my operational role, I took ownership of the Education Officer responsibilities for the Southern Region, leading educational and training initiatives while managing two roles in parallel.</p>
+        </div>
+
+        <div class="honor-card">
+          <div class="honor-icon honor-icon--blue">&#11088;</div>
+          <p class="honor-meta"  data-i18n="honor2-meta">Military Recognition</p>
+          <h3 class="honor-title" data-i18n="honor2-title">Outstanding Operations Officer — Swords of Iron War, Nahal Brigade</h3>
+          <p class="honor-desc"  data-i18n="honor2-desc">Recognized for outstanding performance as an Operations Officer during the Swords of Iron War in the Nahal Brigade. Led and managed the operations cell, demonstrated human-centered leadership under pressure, and built a smart Excel-based operations log to track, organize, and improve operational clarity and follow-up.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORE SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="section-skills">Core Skills</h2>
+      <div class="skills-flat">
+        <span class="skill-tag" data-i18n="skill-ld">Learning &amp; Development</span>
+        <span class="skill-tag" data-i18n="skill-od">Organizational Development</span>
+        <span class="skill-tag" data-i18n="skill-ai">AI Enablement</span>
+        <span class="skill-tag" data-i18n="skill-mgr">Manager Enablement</span>
+        <span class="skill-tag" data-i18n="skill-onboard">Onboarding</span>
+        <span class="skill-tag" data-i18n="skill-ops">Learning Operations</span>
+        <span class="skill-tag" data-i18n="skill-lms">LMS Administration</span>
+        <span class="skill-tag" data-i18n="skill-km">Knowledge Management</span>
+        <span class="skill-tag" data-i18n="skill-tna">Training Needs Analysis</span>
+        <span class="skill-tag" data-i18n="skill-fac">Facilitation</span>
+        <span class="skill-tag" data-i18n="skill-gfac">Group Facilitation</span>
+        <span class="skill-tag" data-i18n="skill-stake">Stakeholder Management</span>
+        <span class="skill-tag" data-i18n="skill-change">Change Enablement</span>
+        <span class="skill-tag" data-i18n="skill-global">Global Collaboration</span>
+        <span class="skill-tag" data-i18n="skill-kpi">KPI Measurement</span>
+        <span class="skill-tag" data-i18n="skill-dash">Dashboard Design</span>
+        <span class="skill-tag" data-i18n="skill-portal">Learning Portal Design</span>
+        <span class="skill-tag" data-i18n="skill-id">Instructional Design</span>
+        <span class="skill-tag" data-i18n="skill-cd">Content Development</span>
+        <span class="skill-tag" data-i18n="skill-rai">Responsible AI</span>
+        <span class="skill-tag" data-i18n="skill-prompt">Prompt Design</span>
+        <span class="skill-tag" data-i18n="skill-port">Portfolio Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS & PLATFORMS ===== -->
+  <section id="tools" class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-i18n="section-tools">Tools &amp; Platforms</h2>
+      <div class="tools-grid">
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--peach">PPT</div>
+          <p class="tool-name" data-i18n="tool-ppt-name">PowerPoint</p>
+          <p class="tool-desc" data-i18n="tool-ppt-desc">Facilitator decks, training presentations, learning materials, and manager enablement slides.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--lavender">CV</div>
+          <p class="tool-name" data-i18n="tool-cv-name">Canva</p>
+          <p class="tool-desc" data-i18n="tool-cv-desc">Case study design, portfolio visuals, visual storytelling, learning assets, and branded templates.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--mint">XL</div>
+          <p class="tool-name" data-i18n="tool-xl-name">Excel</p>
+          <p class="tool-desc" data-i18n="tool-xl-desc">KPI dashboards, learning impact measurement, adoption tracking, data summaries, and reporting.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--blue">FG</div>
+          <p class="tool-name" data-i18n="tool-fg-name">Figma</p>
+          <p class="tool-desc" data-i18n="tool-fg-desc">Learning portal mockups, LMS screens, dashboard interfaces, and user experience design.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--peach">NT</div>
+          <p class="tool-name" data-i18n="tool-nt-name">Notion</p>
+          <p class="tool-desc" data-i18n="tool-nt-desc">Knowledge hubs, resource libraries, onboarding spaces, templates, and structured documentation.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--navy">GH</div>
+          <p class="tool-name" data-i18n="tool-gh-name">GitHub</p>
+          <p class="tool-desc" data-i18n="tool-gh-desc">Portfolio website, project documentation, file organization, and project presentation.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--purple">AI</div>
+          <p class="tool-name" data-i18n="tool-ai-name">AI Tools</p>
+          <p class="tool-desc" data-i18n="tool-ai-desc">Prompt design, AI enablement materials, content structuring, workflow templates, and adoption support.</p>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon tool-icon--mint">LMS</div>
+          <p class="tool-name" data-i18n="tool-lms-name">LMS Administration</p>
+          <p class="tool-desc" data-i18n="tool-lms-desc">Content upload, learner support, user management, permissions, reporting, and adoption tracking.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="section-projects">Portfolio Projects</h2>
+      <p class="section-intro" data-i18n="projects-note">The following projects were developed from academic topics and coursework into practical portfolio assets for L&amp;D, OD, onboarding, AI enablement, change enablement, and global team development.</p>
       <div class="projects-grid">
 
         <!-- Project 01: AI Enablement -->
         <div class="project-card">
           <div class="card-image card-image--purple">
-            <img src="01-ai-enablement/learning-portal-preview.png" alt="AI Enablement Learning Portal">
+            <a href="01-ai-enablement/learning-portal.png.jpg" target="_blank" rel="noopener" class="img-link">
+              <img src="01-ai-enablement/learning-portal-preview.png" alt="AI Enablement Learning Portal">
+            </a>
             <div class="card-number">01</div>
           </div>
           <div class="preview-strip">
-            <img src="01-ai-enablement/case-study-preview.png"       class="preview-thumb" alt="Case Study preview">
-            <img src="01-ai-enablement/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview">
-            <img src="01-ai-enablement/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview">
-            <img src="01-ai-enablement/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview">
+            <a href="01-ai-enablement/case-study-preview.png"       target="_blank" rel="noopener" class="thumb-link"><img src="01-ai-enablement/case-study-preview.png"       class="preview-thumb" alt="Case Study preview"></a>
+            <a href="01-ai-enablement/dashboard-preview.png"        target="_blank" rel="noopener" class="thumb-link"><img src="01-ai-enablement/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview"></a>
+            <a href="01-ai-enablement/facilitator-deck-preview.png" target="_blank" rel="noopener" class="thumb-link"><img src="01-ai-enablement/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview"></a>
+            <a href="01-ai-enablement/content-pack-preview.png"     target="_blank" rel="noopener" class="thumb-link"><img src="01-ai-enablement/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview"></a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">AI Enablement Program</h3>
-            <p class="card-desc">A structured learning initiative designed to move employees and managers from AI awareness to practical, responsible, and measurable AI use in daily work.</p>
+            <h3 class="card-title" data-i18n="p1-title">AI Enablement Program</h3>
+            <p class="card-desc"   data-i18n="p1-desc">A structured learning initiative designed to move employees and managers from AI awareness to practical, responsible, and measurable AI use in daily work.</p>
             <div class="card-skills">
-              <span class="tag">AI Enablement</span>
-              <span class="tag">Instructional Design</span>
-              <span class="tag">Change Management</span>
-              <span class="tag">L&amp;D Analytics</span>
-              <span class="tag">Facilitation</span>
+              <span class="tag" data-i18n="p1-tag1">AI Enablement</span>
+              <span class="tag" data-i18n="p1-tag2">Instructional Design</span>
+              <span class="tag" data-i18n="p1-tag3">Change Management</span>
+              <span class="tag" data-i18n="p1-tag4">L&amp;D Analytics</span>
+              <span class="tag" data-i18n="p1-tag5">Facilitation</span>
             </div>
           </div>
           <div class="card-footer">
             <a href="01-ai-enablement/AI_Enablement_Program_Case_Study.pdf" class="file-btn btn-pdf" target="_blank" rel="noopener">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Case Study
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span data-i18n="btn-case-study">Case Study</span>
             </a>
             <a href="01-ai-enablement/01_AI_Enablement_Program_Full_Facilitator_Deck_EN.pptx" class="file-btn btn-pptx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Facilitator Deck
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="btn-facilitator">Facilitator Deck</span>
             </a>
             <a href="01-ai-enablement/AI_Adoption_Dashboard.xlsx" class="file-btn btn-xlsx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-              Dashboard
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span data-i18n="btn-dashboard">Dashboard</span>
             </a>
             <a href="01-ai-enablement/01_AI_Enablement_Program_Content_Pack.docx" class="file-btn btn-docx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Content Pack
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span data-i18n="btn-content-pack">Content Pack</span>
             </a>
           </div>
         </div>
@@ -141,42 +274,40 @@
         <!-- Project 02: CSM Onboarding -->
         <div class="project-card">
           <div class="card-image card-image--blue">
-            <img src="02-csm-onboarding/learning-portal-preview.png" alt="CSM Onboarding Learning Portal">
+            <a href="02-csm-onboarding/learning-portal.png.jpg" target="_blank" rel="noopener" class="img-link">
+              <img src="02-csm-onboarding/learning-portal-preview.png" alt="CSM Onboarding Learning Portal">
+            </a>
             <div class="card-number">02</div>
           </div>
           <div class="preview-strip">
-            <img src="02-csm-onboarding/case-study-preview.png"       class="preview-thumb" alt="Case Study preview">
-            <img src="02-csm-onboarding/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview">
-            <img src="02-csm-onboarding/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview">
-            <img src="02-csm-onboarding/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview">
+            <a href="02-csm-onboarding/case-study-preview.png"       target="_blank" rel="noopener" class="thumb-link"><img src="02-csm-onboarding/case-study-preview.png"       class="preview-thumb" alt="Case Study preview"></a>
+            <a href="02-csm-onboarding/dashboard-preview.png"        target="_blank" rel="noopener" class="thumb-link"><img src="02-csm-onboarding/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview"></a>
+            <a href="02-csm-onboarding/facilitator-deck-preview.png" target="_blank" rel="noopener" class="thumb-link"><img src="02-csm-onboarding/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview"></a>
+            <a href="02-csm-onboarding/content-pack-preview.png"     target="_blank" rel="noopener" class="thumb-link"><img src="02-csm-onboarding/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview"></a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">30/60/90 Onboarding Journey for Customer Success Managers</h3>
-            <p class="card-desc">A structured onboarding program designed to improve onboarding consistency, reduce time-to-productivity, and support managers with readiness criteria.</p>
+            <h3 class="card-title" data-i18n="p2-title">30/60/90 Onboarding Journey for Customer Success Managers</h3>
+            <p class="card-desc"   data-i18n="p2-desc">A structured onboarding program designed to improve onboarding consistency, reduce time-to-productivity, and support managers with readiness criteria.</p>
             <div class="card-skills">
-              <span class="tag">Onboarding</span>
-              <span class="tag">Curriculum Design</span>
-              <span class="tag">Manager Enablement</span>
-              <span class="tag">KPI Measurement</span>
-              <span class="tag">CSM Enablement</span>
+              <span class="tag" data-i18n="p2-tag1">Onboarding</span>
+              <span class="tag" data-i18n="p2-tag2">Curriculum Design</span>
+              <span class="tag" data-i18n="p2-tag3">Manager Enablement</span>
+              <span class="tag" data-i18n="p2-tag4">KPI Measurement</span>
+              <span class="tag" data-i18n="p2-tag5">CSM Enablement</span>
             </div>
           </div>
           <div class="card-footer">
             <a href="02-csm-onboarding/CSM_Onboarding_Case_Study.pdf" class="file-btn btn-pdf" target="_blank" rel="noopener">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Case Study
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span data-i18n="btn-case-study">Case Study</span>
             </a>
             <a href="02-csm-onboarding/02_CSM_Onboarding_Full_Facilitator_Deck_EN.pptx" class="file-btn btn-pptx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Facilitator Deck
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="btn-facilitator">Facilitator Deck</span>
             </a>
             <a href="02-csm-onboarding/CS_Onboarding_Dashboard.xlsx" class="file-btn btn-xlsx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-              Dashboard
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span data-i18n="btn-dashboard">Dashboard</span>
             </a>
             <a href="02-csm-onboarding/Project_2_CSM_Onboarding_Content_Pack.docx" class="file-btn btn-docx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Content Pack
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span data-i18n="btn-content-pack">Content Pack</span>
             </a>
           </div>
         </div>
@@ -184,46 +315,43 @@
         <!-- Project 03: Change Enablement -->
         <div class="project-card">
           <div class="card-image card-image--mint">
-            <img src="03-change-enablement/learning-portal-preview.png" alt="Change Enablement Learning Portal">
+            <a href="03-change-enablement/learning-portal.png.jpg" target="_blank" rel="noopener" class="img-link">
+              <img src="03-change-enablement/learning-portal-preview.png" alt="Change Enablement Learning Portal">
+            </a>
             <div class="card-number">03</div>
           </div>
           <div class="preview-strip">
-            <img src="03-change-enablement/case-study-preview.png"       class="preview-thumb" alt="Case Study preview">
-            <img src="03-change-enablement/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview">
-            <img src="03-change-enablement/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview">
-            <img src="03-change-enablement/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview">
+            <a href="03-change-enablement/case-study-preview.png"       target="_blank" rel="noopener" class="thumb-link"><img src="03-change-enablement/case-study-preview.png"       class="preview-thumb" alt="Case Study preview"></a>
+            <a href="03-change-enablement/dashboard-preview.png"        target="_blank" rel="noopener" class="thumb-link"><img src="03-change-enablement/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview"></a>
+            <a href="03-change-enablement/facilitator-deck-preview.png" target="_blank" rel="noopener" class="thumb-link"><img src="03-change-enablement/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview"></a>
+            <a href="03-change-enablement/content-pack-preview.png"     target="_blank" rel="noopener" class="thumb-link"><img src="03-change-enablement/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview"></a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Change Readiness &amp; Learning Enablement Program</h3>
-            <p class="card-desc">A change enablement program designed to help global technology teams understand strategic change, translate it into daily work, build new capabilities, and measure adoption.</p>
+            <h3 class="card-title" data-i18n="p3-title">Change Readiness &amp; Learning Enablement Program</h3>
+            <p class="card-desc"   data-i18n="p3-desc">A change enablement program designed to help global technology teams understand strategic change, translate it into daily work, build new capabilities, and measure adoption.</p>
             <div class="card-skills">
-              <span class="tag">Change Enablement</span>
-              <span class="tag">Learning Strategy</span>
-              <span class="tag">Global Collaboration</span>
-              <span class="tag">Stakeholder Management</span>
-              <span class="tag">KPI Measurement</span>
+              <span class="tag" data-i18n="p3-tag1">Change Enablement</span>
+              <span class="tag" data-i18n="p3-tag2">Learning Strategy</span>
+              <span class="tag" data-i18n="p3-tag3">Global Collaboration</span>
+              <span class="tag" data-i18n="p3-tag4">Stakeholder Management</span>
+              <span class="tag" data-i18n="p3-tag5">KPI Measurement</span>
             </div>
           </div>
           <div class="card-footer">
             <a href="03-change-enablement/Change_Enablement_Case_Study.pdf" class="file-btn btn-pdf" target="_blank" rel="noopener">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Case Study
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span data-i18n="btn-case-study">Case Study</span>
             </a>
             <a href="03-change-enablement/03_Change_Readiness_Learning_Enablement_Full_Facilitator_Deck_EN.pptx" class="file-btn btn-pptx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Facilitator Deck
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="btn-facilitator">Facilitator Deck</span>
             </a>
             <a href="03-change-enablement/Change_Adoption_Dashboard.xlsx" class="file-btn btn-xlsx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-              Dashboard
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span data-i18n="btn-dashboard">Dashboard</span>
             </a>
             <a href="03-change-enablement/03_Change_Enablement_Content_Pack.docx" class="file-btn btn-docx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Content Pack
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span data-i18n="btn-content-pack">Content Pack</span>
             </a>
             <a href="03-change-enablement/Change_Readiness_Learning_Enablement_Program.pptx" class="file-btn btn-pptx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Program Overview
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="btn-overview">Program Overview</span>
             </a>
           </div>
         </div>
@@ -231,42 +359,40 @@
         <!-- Project 04: Global Conflict -->
         <div class="project-card">
           <div class="card-image card-image--peach">
-            <img src="04-global-conflict/learning-portal-preview.png" alt="Global Conflict Management Learning Portal">
+            <a href="04-global-conflict/learning-portal.png.jpg" target="_blank" rel="noopener" class="img-link">
+              <img src="04-global-conflict/learning-portal-preview.png" alt="Global Conflict Management Learning Portal">
+            </a>
             <div class="card-number">04</div>
           </div>
           <div class="preview-strip">
-            <img src="04-global-conflict/case-study-preview.png"       class="preview-thumb" alt="Case Study preview">
-            <img src="04-global-conflict/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview">
-            <img src="04-global-conflict/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview">
-            <img src="04-global-conflict/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview">
+            <a href="04-global-conflict/case-study-preview.png"       target="_blank" rel="noopener" class="thumb-link"><img src="04-global-conflict/case-study-preview.png"       class="preview-thumb" alt="Case Study preview"></a>
+            <a href="04-global-conflict/dashboard-preview.png"        target="_blank" rel="noopener" class="thumb-link"><img src="04-global-conflict/dashboard-preview.png"        class="preview-thumb" alt="Dashboard preview"></a>
+            <a href="04-global-conflict/facilitator-deck-preview.png" target="_blank" rel="noopener" class="thumb-link"><img src="04-global-conflict/facilitator-deck-preview.png" class="preview-thumb" alt="Facilitator Deck preview"></a>
+            <a href="04-global-conflict/content-pack-preview.png"     target="_blank" rel="noopener" class="thumb-link"><img src="04-global-conflict/content-pack-preview.png"     class="preview-thumb" alt="Content Pack preview"></a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Global Conflict Management Enablement Program</h3>
-            <p class="card-desc">A practical learning and manager enablement program focused on cross-cultural communication, conflict prevention, mediation, and collaboration norms for global teams.</p>
+            <h3 class="card-title" data-i18n="p4-title">Global Conflict Management Enablement Program</h3>
+            <p class="card-desc"   data-i18n="p4-desc">A practical learning and manager enablement program focused on cross-cultural communication, conflict prevention, mediation, and collaboration norms for global teams.</p>
             <div class="card-skills">
-              <span class="tag">Global Collaboration</span>
-              <span class="tag">Manager Enablement</span>
-              <span class="tag">Facilitation</span>
-              <span class="tag">Learning Portal Design</span>
-              <span class="tag">Stakeholder Management</span>
+              <span class="tag" data-i18n="p4-tag1">Global Collaboration</span>
+              <span class="tag" data-i18n="p4-tag2">Manager Enablement</span>
+              <span class="tag" data-i18n="p4-tag3">Facilitation</span>
+              <span class="tag" data-i18n="p4-tag4">Learning Portal Design</span>
+              <span class="tag" data-i18n="p4-tag5">Stakeholder Management</span>
             </div>
           </div>
           <div class="card-footer">
             <a href="04-global-conflict/Global_Conflict_Case_Study.pdf" class="file-btn btn-pdf" target="_blank" rel="noopener">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Case Study
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span data-i18n="btn-case-study">Case Study</span>
             </a>
             <a href="04-global-conflict/04_Global_Conflict_Management_Full_Facilitator_Deck_EN.pptx" class="file-btn btn-pptx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Facilitator Deck
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span data-i18n="btn-facilitator">Facilitator Deck</span>
             </a>
             <a href="04-global-conflict/Conflict_Management_Dashboard.xlsx" class="file-btn btn-xlsx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-              Dashboard
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg><span data-i18n="btn-dashboard">Dashboard</span>
             </a>
             <a href="04-global-conflict/04_Global_Conflict_Management_Content_Pack_FIXED.docx" class="file-btn btn-docx" download>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              Content Pack
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span data-i18n="btn-content-pack">Content Pack</span>
             </a>
           </div>
         </div>
@@ -275,11 +401,21 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- ===== WHAT THIS PORTFOLIO DEMONSTRATES ===== -->
+  <section id="demonstrates" class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-i18n="section-demonstrates">What This Portfolio Demonstrates</h2>
+      <div class="demonstrates-inner">
+        <p class="demonstrates-text" data-i18n="demonstrates-text">This portfolio demonstrates end-to-end L&amp;D thinking: identifying organizational needs, mapping learning gaps, designing practical programs, creating facilitator decks and learning assets, building dashboards, developing learning portals and knowledge hubs, and connecting learning to adoption and measurable impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
   <section id="contact" class="section contact-section">
     <div class="container">
-      <h2 class="section-title section-title--light">Get in Touch</h2>
-      <p class="contact-subtitle">Interested in collaborating on learning programs, AI enablement, or organizational change initiatives? Let's connect.</p>
+      <h2 class="section-title section-title--light" data-i18n="section-contact">Get in Touch</h2>
+      <p class="contact-subtitle" data-i18n="contact-subtitle">Interested in collaborating on learning programs, AI enablement, or organizational change initiatives? Let's connect.</p>
       <div class="contact-links">
         <a href="mailto:ayelet.nogrian@gmail.com" class="contact-btn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -287,32 +423,24 @@
         </a>
         <a href="https://www.linkedin.com/in/ayelet-nogrian-836930233" class="contact-btn" target="_blank" rel="noopener noreferrer">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn Profile
+          <span data-i18n="contact-linkedin-label">LinkedIn Profile</span>
         </a>
         <span class="contact-btn contact-location">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Tel Aviv, Israel
+          <span data-i18n="contact-location-label">Tel Aviv, Israel</span>
         </span>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Ayelet Nogrian &middot; Learning &amp; AI Enablement Portfolio</p>
+      <p data-i18n="footer-text">&copy; 2026 Ayelet Nogrian &middot; Learning &amp; AI Enablement Portfolio</p>
     </div>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
